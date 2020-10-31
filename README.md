@@ -6,4 +6,4 @@ There are 2 users:
 
 This a app developed using Java, XML & Firebase
 
-# _ _Icons made by Flat Icons ("https://www.flaticon.com/authors/flat-icons")_ _
+# _Icons made by Flat Icons ("https://www.flaticon.com/authors/flat-icons")_
