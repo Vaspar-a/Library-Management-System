@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_books"
+        android:enabled="true"
+        android:icon="@drawable/charusat_logo"
+        android:title="Books"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_request"
+        android:enabled="true"
+        android:icon="@drawable/request"
+        android:title="Requests"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_issued"
+        android:enabled="true"
+        android:icon="@drawable/issued"
+        app:showAsAction="ifRoom"
+        android:title="Isuued" />
+</menu>

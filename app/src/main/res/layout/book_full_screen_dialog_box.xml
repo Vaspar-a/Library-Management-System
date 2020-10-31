@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:isScrollContainer="false"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            app:layout_constraintBottom_toBottomOf="@id/cancel_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <ImageView
+                android:id="@+id/book_img"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="book_img"
+                android:src="@drawable/add_image" />
+
+            <LinearLayout
+                android:id="@+id/panel_isbn"
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_isbn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ISBN"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/input_isbn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="ISBN"
+                    android:backgroundTint="#F31212"
+                    android:hint="ISBN"
+                    android:inputType="text"
+                    android:textColor="#CC010101"
+                    android:textColorHint="#00FFFFFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/panel_name"
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/input_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:autofillHints="ISBN"
+                    android:backgroundTint="#F31212"
+                    android:hint="Name"
+                    android:inputType="text"
+                    android:textColor="#CC010101"
+                    android:textColorHint="#00FFFFFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/panel_author"
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Author"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/input_author"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:autofillHints="ISBN"
+                    android:backgroundTint="#F31212"
+                    android:hint="Author"
+                    android:inputType="text"
+                    android:textColor="#CC010101"
+                    android:textColorHint="#00FFFFFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/panel_publisher"
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_publisher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Publisher"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/input_publisher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:autofillHints="Publisher"
+                    android:backgroundTint="#F31212"
+                    android:hint="Publisher"
+                    android:inputType="text"
+                    android:textColor="#CC010101"
+                    android:textColorHint="#00FFFFFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/panel_description"
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/input_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:autofillHints="Description"
+                    android:backgroundTint="#F31212"
+                    android:scrollbars="vertical"
+                    android:scrollbarStyle="insideInset"
+                    android:lines="3"
+                    android:hint="Description"
+                    android:inputType="textMultiLine"
+                    android:textColor="#CC010101"
+                    android:textColorHint="#00FFFFFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/panel_genre"
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_genre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Genre"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <com.hootsuite.nachos.NachoTextView
+                    android:id="@+id/input_genre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-10dp"
+                    app:chipTextColor="#038DB9"
+                    app:chipTextSize="16dp"
+                    app:chipHeight="30dp"
+                    app:chipVerticalSpacing="3dp"
+                    android:autofillHints="Genre"
+                    android:backgroundTint="#F31212"
+                    android:hint="Genre"
+                    android:inputType="text"
+                    android:textColor="#038DB9"
+                    android:textColorHint="#00FFFFFF"
+                    android:textSize="16sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/panel_available"
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_available"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Available"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/input_available"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:autofillHints="available"
+                    android:backgroundTint="#F31212"
+                    android:hint="Available"
+                    android:inputType="text"
+                    android:textColor="#CC010101"
+                    android:textColorHint="#00FFFFFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_state"
+            android:letterSpacing="0.01"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="SAVE"
+            android:textColor="#CCF31212"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.95"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="0.804" />
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_state"
+            android:letterSpacing="0.01"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="CANCEL"
+            android:textColor="#CCF31212"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.049"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="0.804" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

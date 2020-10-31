@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_gravity="bottom"
+    android:layout_height="50dp"
+    android:background="#F31212"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    tools:context=".MainActivity"
+    >
+    <LinearLayout
+        android:id="@+id/library"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:paddingTop="3sp"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables">
+        <ImageView
+            android:id="@+id/library_image"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/library"
+            android:contentDescription="library" />
+        <TextView
+            android:id="@+id/library_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#FFF9EA"
+            android:layout_gravity="center_horizontal"
+            android:text="Library"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/requests"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingTop="3sp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables">
+        <ImageView
+            android:id="@+id/requests_image"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/request"
+            android:contentDescription="request" />
+        <TextView
+            android:id="@+id/requests_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#FFF9EA"
+            android:layout_gravity="center_horizontal"
+            android:text="Requests"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/issued"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingTop="3sp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables">
+        <ImageView
+            android:id="@+id/issued_image"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/issued"
+            android:contentDescription="issued" />
+        <TextView
+            android:id="@+id/issued_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#FFF9EA"
+            android:text="Issued"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/returned"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingTop="3sp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables">
+        <ImageView
+            android:id="@+id/returned_image"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/returned"
+            android:contentDescription="returned" />
+        <TextView
+            android:id="@+id/returned_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#FFF9EA"
+            android:text="Returned"/>
+    </LinearLayout>
+
+</LinearLayout>
