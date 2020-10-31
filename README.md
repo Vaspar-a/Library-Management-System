@@ -9,6 +9,6 @@ This a app developed using Java, XML & Firebase
 
 **Dependencies used:**
 - Firebase (_https://github.com/firebase_)
-- Hootsuite(NachoTextView) (_https://github.com/hootsuite/nachos_)
+- Hootsuite NachoTextView (_https://github.com/hootsuite/nachos_)
 - Glide (_https://github.com/bumptech/glide_)
 - Shobhitpuri Custom Google Sign In Button (_https://github.com/shobhitpuri/custom-google-signin-button_)
