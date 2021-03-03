@@ -5,7 +5,7 @@ There are 2 users:
   1) Librarian: He/She can add, delete, update and issue books.
   2) User: He/She can search, request & return a book. He/She can also ask for renewal of deadline.
 
-This app developed using Java, XML & Firebase
+This app is developed using Java, XML & Firebase
 
 **Dependencies used:**
 - Firebase (_https://github.com/firebase_)
